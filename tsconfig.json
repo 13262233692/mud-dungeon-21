@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@shared/*": ["./shared/*"],
+      "@api/*": ["./api/*"]
+    },
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.ts", "src/**/*.svelte", "shared/**/*.ts", "api/**/*.ts"],
+  "exclude": ["node_modules"]
+}
